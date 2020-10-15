@@ -1,0 +1,36 @@
+{
+    "name": "SimpleJira",
+    "short_name": "SimpleJira",
+    "description": "Tool to hide some parts of Jira and to make more space for the rest components",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "icons": {
+        "16": "images/icon-full.png",
+        "128": "images/icon-full.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon-full.png",
+            "38": "images/icon-full.png"
+        },
+        "default_title": "SimpleJira",
+        "default_popup": "pages/popup/popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "css": [
+            "styles/contentscript.css"
+        ],
+        "js": [
+            "scripts/contentscript.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": false
+    }],
+    "permissions": [
+        "<all_urls>"
+    ]
+}

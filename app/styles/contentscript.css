@@ -1,0 +1,16 @@
+.content-bottom-div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 20px;
+    background-color: #3b3b4c;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    z-index: 99999;
+    line-height: 1;
+    cursor: pointer;
+}
