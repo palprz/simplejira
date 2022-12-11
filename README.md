@@ -1,4 +1,4 @@
-# SimpleJira [October 2020]
+# SimpleJira 
 
 ![logo](github/images/sillylogo.png)
 
